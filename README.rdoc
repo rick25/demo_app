@@ -52,6 +52,34 @@ Things you may want to cover:
 		  gem 'rails_12factor', '0.0.2'
 		end
 
+-Agrego el repositorio remoto luego de crearlo en github:
+		git remote add origin https://github.com/rick25/demo_app.git
+
+
+-Envio los cambios al repositorio remoto :
+		git push -u origin master
+
+-Ahora vamos a crear un recurso Usuario :
+		rails generate scaffold Usuario nombre:string email:string
+
+-Ahora migramos la bd con el comando :
+		bundle exec rake db:migrate
+
+-Ahora vamos a crear un recurso Micropost
+		rails generate scaffold Micropost contenido:string usuario_id:integer
+
+-Ahora migramos la bd con el comando :
+		bundle exec rake db:migrate
+
+-Podemos usar el siguiente comando para averiguar datos acerca de la bd :
+		rails console						#para ingresar a la consola
+		primer_usuario = Usuario.first 		#para nombrar y mostrar los datos del primer usuario
+		primer_usuario.microposts			#para mostrar los microposts que le corresponden a ese usuario
+		exit								#para salir del modo consola
+
+-
+
+
 
 
 
