@@ -77,8 +77,27 @@ Things you may want to cover:
 		primer_usuario.microposts			#para mostrar los microposts que le corresponden a ese usuario
 		exit								#para salir del modo consola
 
--
+-Para ir terminando agrego todos los archivos a mi repositorio git :
+		git add .
 
+-Hago un commit final :
+		git commit -m "Fin de demo_app"
+
+-Mando los cambios a mi repositorio remoto en github :
+		git push
+
+-Creo la aplicacion en heroku :
+		heroku create
+
+-Mando los datos a mi repositorio en heroku :
+		git push heroku master
+
+-Esto actualiza la base de datos en Heroku con el modelo de datos de usuario / micropost necesario.
+		heroku run rake db:migrate
+
+-Por ultimo intento ver la aplicacion corriendo en heroku (Aun no se puede ver y muestra un error)
+		heroku open
+		
 
 
 
